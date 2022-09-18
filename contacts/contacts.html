@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <title>Contacts</title>
+</head>
+
+<body>
+  <header class="header">
+    <div><a href=""><img class="logo" src="../images/logo.png" alt="logo"></a></div>
+    <nav>
+      <ul class="menu">
+        <li> <a class="menu__link " href="../index.html">Home</a></li>
+        <li> <a class="menu__link " href="../store/store.html">Store</a></li>
+        <li> <a class="menu__link menu__link_active" href="">Contacts</a></li>
+      </ul>
+    </nav>
+    <form class="form-search">
+      <input class="form-search__search" placeholder="search" name="search" type="search">
+      <input src="../images/search.png" type="image">
+    </form>
+  </header>
+  <div class="container">
+    <form class="contact-form" action="">
+     <h3 class="contact-form__title" >Заполните форму</h3>
+      <p class="contact-form__data " > 
+        <input required type="text" placeholder="Ваше имя" name="user_name">
+        <input  type="number" min="6" max="110" name="user_age" placeholder="Ваш возраст">
+        <input  required type="email" name="user_email" placeholder="Ваша почта">
+        <input required  type="password" name="user_password" placeholder="Ваш пароль">
+      </p>
+      <p>
+        <label for="">Ваш любимый цвет автомобиля</label>
+        <input type="color" name="user_color">
+      </p>
+      <p>
+        <label for="">Дата выпуска любимого автомобиля</label>
+        <input type="date" name="user_date">
+      </p>
+      <p>
+        <label for="">Фото любимого автомобиля</label>
+        <input type="file" name="user_file">
+      </p>
+      <p>
+        <b>Марка любимого автомобиля</b>
+        <br>
+        <label for="q7">Q7</label>
+        <input id="q7" checked value="Q7" type="radio" name="car">
+        <br>
+        <label for="q5">Q5</label>
+        <input id="q5" value="Q5" type="radio" name="car">
+        <br>
+        <label for="s3">S3</label>
+        <input id="s3" value="S3"type="radio" name="car">
+      </p>
+      <p>
+        <b>Выберите тип кузова</b>
+        <br>
+        <label for="sedan">Sedan</label>
+        <input id="sedan" checked value="sedan" type="checkbox" name="car_body">
+        <br>
+        <label for="crossover">Crossover</label>
+        <input id="crossover" value="crossover" type="checkbox" name="car_body">
+        <br>
+        <label for="hatchback">Hatchback</label>
+        <input id="hatchback" value="hatchback"type="checkbox" name="car_body">
+      </p>
+      <P>
+        <b>Напишите почему вам нравится ваш любимый автомобиль</b>
+        <br>
+        <textarea class="contact-form__desc" name="desc"></textarea>
+      </P>
+      <p class="contact-form__buttons">
+        <button class="btn btn-clear" type="reset" >Очистить</button>
+        <button class="btn btn-send" type="submit">Отправить</button>
+      </p>
+    </form>
+  </div>
+  <footer class="footer">
+    <p>Копирование запрещенно</p>
+</footer>
+</body>
+
+</html>

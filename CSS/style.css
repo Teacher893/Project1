@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    padding-top: 70px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.btn {
+    color: azure;
+    transition: .4s;
+    border-radius: 10px;
+    padding: 7px;
+
+}
+
+.btn:hover {
+
+    transform: scale(1.1);
+
+}
+
+.btn-send {
+    background-color: blue;
+}
+
+.btn-clear {
+    background-color: brown;
+
+}
+
+/* ########################################### */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    box-shadow: 0 1px 7px 1px gray;
+    padding: 0 30px;
+    background-color: antiquewhite;
+
+}
+
+.logo {
+    width: 100px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu__link {
+    color: coral;
+    transition: .4s;
+}
+
+.menu__link:hover,
+.menu__link_active {
+    color: rgb(196, 99, 64);
+
+}
+
+.form-search {
+    display: flex;
+    height: 35px;
+    gap: 5px;
+
+}
+
+.form-search__search {
+    padding: 0 5px;
+}
+
+/* ############################################### */
+.post {
+
+    border-bottom: 1px solid orange;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+
+}
+
+.post__title,
+.post__img {
+    margin-bottom: 15px;
+
+}
+
+.post__img {
+    border-radius: 5px;
+    float: left;
+    margin-right: 20px;
+}
+
+.post__body {
+    text-align: justify;
+    line-height: 130%;
+}
+
+.post__title {
+    text-align: center;
+}
+
+/* ########################################################## */
+.rating {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.rating tbody tr:nth-of-type(2n) {
+    background-color: rgb(234, 205, 171);
+}
+
+.rating td,
+.rating th {
+    padding: 8px;
+    vertical-align: top;
+    border-top: 1px solid gray;
+
+
+}
+
+.rating thead {
+    text-align: left;
+    background-color: black;
+    color: azure;
+}
+
+.rating caption {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+
+.rating tbody tr:hover {
+    background-color: black;
+    color: azure;
+}
+
+.contact-form {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.contact-form p {
+    margin-bottom: 20px;
+}
+
+.contact-form__title {
+    margin-bottom: 30px;
+}
+
+.contact-form__data {
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.contact-form__data input {
+    text-align: center;
+}
+
+.contact-form__desc {
+    width: 100%;
+    max-width: 710px;
+    height: 300px;
+    resize: none;
+    padding: 10px;
+}
+
+.contact-form__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.footer {
+    min-height: 80px;
+    background-color: rgb(105, 102, 102);
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
