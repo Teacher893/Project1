@@ -226,3 +226,56 @@ a {
 .betternet-wrapper{
     display: none;
 }
+.product{
+    display: grid;
+    grid-template-rows: repeat(3,auto);
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.product__img{
+    max-width:100%; 
+    height: 100px;
+}
+.product__card{
+    box-shadow: 4px 4px 7px 1px grey;
+    padding: 15px;
+    text-align: right;
+    
+
+}
+.product__title{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.product__info{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.product__price{
+text-align: right;
+margin-bottom: 10px;
+}
+.product__imege-box{
+    text-align: center;
+    height: 150px;
+}
+@media (max-width:1000px){
+    .product{
+        grid-template-rows: repeat(4,auto);
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width:810px){
+    .product{
+        grid-template-rows: repeat(6,auto);
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:540px){
+    .product{
+        grid-template-rows: repeat(12,auto);
+        grid-template-columns: 1fr;
+    }
+}
